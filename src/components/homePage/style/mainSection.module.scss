@@ -2,15 +2,22 @@
   width: 100%;
   background-image: url("/icons/universe_background.svg");
   .main_universe {
+    width: 100%;
+    height: 822px;
+    background-image: url(/icons/sphere-bg-main.svg);
+    background-repeat: no-repeat;
+    background-size: 827px 827px;
+    background-position-x: 697px;
+    background-position-y: 43px;
+
     .universe_section {
       display: flex;
       justify-content: space-around;
-      max-width: 1222px;
-      padding-top: 68px;
-      margin-right: 5px;
+      max-width: 1440px;
+      padding: 188px 92px 0 154px;
       .universeLeft_section {
         max-width: 663px;
-        margin-right: 4px;
+
         .universe_heading {
           font-style: normal;
           font-weight: 700;
@@ -65,8 +72,11 @@
           text-transform: uppercase;
         }
       }
-      // .universeRight_section {
-      // }
+
+      .right_logo {
+        width: 555px;
+        height: 554px;
+      }
     }
   }
 }
