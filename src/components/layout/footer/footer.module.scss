@@ -1,0 +1,46 @@
+@import "../../../assets/scss/variables.scss";
+.main_footer {
+  max-width: 732px;
+  background-image: url("/icons/background_img.svg");
+  padding: 0; //globaly set
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  .footer_listSection {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+    .footer_list {
+      max-width: 113px;
+      margin: 8px 0;
+      list-style-type: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase;
+      a {
+        text-decoration: none;
+        color: $White;
+      }
+    }
+  }
+  .footer_icons {
+    max-width: 256px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+  }
+  .footer_para {
+    max-width: 210px;
+    margin: 0 auto 40px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: $White;
+  }
+}
