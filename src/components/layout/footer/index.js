@@ -3,16 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import style from "./footer.module.scss";
 import { Container } from "react-bootstrap";
-const Footer = () => {
+const Index = () => {
   return (
     <div className={style.footer_section}>
       <Container className={style.main_footer}>
-        <Image
-          alt="nav_logo"
-          src="/icons/nav_logo.svg"
-          width={256}
-          height={69}
-        />
+        <Image alt="nav_logo" src="/icons/nav_logo.svg" width={256} height={69} />
 
         <ul className={style.footer_listSection}>
           <li className={style.footer_list}>
@@ -47,36 +42,11 @@ const Footer = () => {
           </li>
         </ul>
         <Container className={style.footer_icons}>
-          <Image
-            alt="fb_logo"
-            src="/icons/facebook.svg"
-            width={24}
-            height={24}
-          />
-          <Image
-            alt="insta_logo"
-            src="/icons/instagram.svg"
-            width={24}
-            height={24}
-          />
-          <Image
-            alt="youtube_logo"
-            src="/icons/youtube.svg"
-            width={24}
-            height={24}
-          />
-          <Image
-            alt="twitter_logo"
-            src="/icons/twitter.svg"
-            width={24}
-            height={24}
-          />
-          <Image
-            alt="linkedin_logo"
-            src="/icons/linkedin.svg"
-            width={24}
-            height={24}
-          />
+          <Image alt="fb_logo" src="/icons/facebook.svg" width={24} height={24} />
+          <Image alt="insta_logo" src="/icons/instagram.svg" width={24} height={24} />
+          <Image alt="youtube_logo" src="/icons/youtube.svg" width={24} height={24} />
+          <Image alt="twitter_logo" src="/icons/twitter.svg" width={24} height={24} />
+          <Image alt="linkedin_logo" src="/icons/linkedin.svg" width={24} height={24} />
         </Container>
         <p className={style.footer_para}>© FINCRIP 2022 All rights reserved.</p>
       </Container>
@@ -84,4 +54,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Index;
