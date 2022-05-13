@@ -51,7 +51,6 @@ const TopNav = () => {
                 width={20}
                 height={20}
               />
-              h
             </Nav>
           </Navbar.Collapse>
         </Container>
