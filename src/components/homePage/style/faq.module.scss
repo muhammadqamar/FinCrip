@@ -1,33 +1,14 @@
 .faq_main {
-  .faq_section {
-    .faq_heading {
-      max-width: 50px;
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 43px;
-      text-transform: uppercase;
-      margin: auto;
-      color: $finPrimaryColor;
-    }
-    .faq_content {
-      margin-top: 40px;
-      .content_heading {
-        min-width: 406px;
-        font-weight: 700;
-        margin-bottom: 20px;
-        padding: 10px 0;
-        text-align: center;
-        font-size: 20px;
-        line-height: 24px;
-        color: $finPrimaryColor;
-        border: 1px solid;
-        border-image-source: linear-gradient(
-          180deg,
-          #01d6fe 0%,
-          #008bd9 31.25%,
-          #10ffb7 100%
-        );
-      }
-    }
+  max-width: 947px;
+  margin: auto;
+  margin-bottom: 120px;
+
+  .fag_heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: $finPrimaryColor;
   }
 }

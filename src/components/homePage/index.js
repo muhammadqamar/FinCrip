@@ -12,13 +12,15 @@ const Index = () => {
   return (
     <>
       <MainSection />
-      <FinProtocol />
-      <KeyFeatures />
-      <Team />
-      <RoadMap />
-      <Faq />
+      <div className="three-banner-bg-image">
+        <FinProtocol />
+        <KeyFeatures />
+      </div>
       <OverVision />
       <TokenMetrics />
+      <RoadMap />
+      <Faq />
+      <Team />
     </>
   );
 };
