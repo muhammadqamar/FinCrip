@@ -6,7 +6,7 @@ import { Button, Container, Nav, Navbar } from "react-bootstrap";
 const TopNav = () => {
   return (
     <>
-      <Navbar className="main_container" bg="dark" expand="lg">
+      <Navbar className="main_container" expand="lg">
         <Container fluid>
           <Image
             className="nav_logo"
