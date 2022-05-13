@@ -1,5 +1,6 @@
 import React from "react";
 import { Image } from "react-bootstrap";
+
 import style from "./style//team.module.scss";
 
 const card = [
@@ -18,9 +19,6 @@ const card = [
     heading: "Marketing Lead",
     para: "Brings more than 15 years of digital and social media marketing experience into Fincrip. Also has a bachelor’s degree in Marketing and a passion for storytelling to spotlight patterns within the blockchain industry.",
   },
-];
-
-const lastCards = [
   {
     img: "/icons/team_iconFour.svg",
     heading: "Operations Lead",
@@ -40,23 +38,8 @@ const Team = () => {
         <h5 className={style.team_heading}>Team</h5>
       </div>
       <div className={style.team_cards}>
-        {card.map((item) => (
-          <div className={style.card}>
-            <Image
-              className={style.card_img}
-              alt="card_Image"
-              src={item.img}
-              width={120}
-              height={120}
-            />
-            <h5 className={style.card_heading}>{item.heading}</h5>
-            <p className={style.card_para}> {item.para}</p>
-          </div>
-        ))}
-      </div>
-      <div className={style.team_cards}>
-        {lastCards.map((item) => (
-          <div className={`${style.card} ${style.last_cards}`}>
+        {card.map((item, index, count) => (
+          <div key={count} className={index > 2 ? `${style.last_cards} ${style.card}` : style.card}>
             <Image
               className={style.card_img}
               alt="card_Image"

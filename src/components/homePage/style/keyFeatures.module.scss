@@ -1,5 +1,9 @@
 .feature_section {
   margin-bottom: 80px;
+  padding: 0;
+  @media (max-width: 992px) {
+    padding: 0 30px;
+  }
   .feature_heading {
     min-width: 252px;
     font-weight: 700;
@@ -7,33 +11,69 @@
     line-height: 57px;
     text-align: center;
     color: $finPrimaryColor;
+    margin-bottom: 40px;
   }
 
   .feature_cards {
-    max-width: 946px;
+    width: 946px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: auto;
     flex-wrap: wrap;
+
+    @media (max-width: 992px) {
+      width: 100%;
+      margin: inherit;
+    }
+
+    .last_card {
+      width: 100% !important;
+    }
+
     .feature_card {
-      max-width: 426px;
+      width: 426px;
+      min-height: 158px;
       padding: 35px 26px;
-      background-image: url("/icons/finBorder_Img.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
+      margin-bottom: 20px;
+      border: 2px solid transparent;
+      border: 2px solid;
+      border-image-source: linear-gradient(180deg, #01d6fe 0%, #008bd9 31.25%, #10ffb7 100%);
+      border-image-slice: 1;
+      position: relative;
+
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 38px;
+        height: 70px;
+        background-color: #02131b;
+        right: -8px;
+        bottom: -24px;
+        transform: rotate(45deg);
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-left: 2px solid;
+        border-image-source: linear-gradient(180deg, #01d6fe 0%, #008bd9 31.25%, #10ffb7 100%);
+        border-image-slice: 1;
+      }
+
       .card_heading {
         font-weight: 700;
         font-size: 20px;
         line-height: 24px;
         color: $finPrimaryColor;
+        margin: 0 0 10px;
       }
       .card_para {
-        max-width: 375px;
         font-weight: 400;
         font-size: 14px;
         line-height: 18px;
         color: $White;
+        margin: 0;
       }
     }
   }
