@@ -3,10 +3,10 @@ import Image from "next/image";
 import style from "./navbar.module.scss";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 
-const TopNav = () => {
+const Index = () => {
   return (
     <>
-      <Navbar className="main_container" expand="lg">
+      <Navbar className="main_container" bg="dark" expand="lg">
         <Container fluid>
           <Image
             className="nav_logo"
@@ -59,4 +59,4 @@ const TopNav = () => {
   );
 };
 
-export default TopNav;
+export default Index;

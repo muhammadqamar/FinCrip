@@ -1,0 +1,28 @@
+.roadMap_main {
+  background-image: url("/icons/roadMap_background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  //   transform: rotate(100.74deg);
+  min-height: 1023px;
+  .roadMap_section {
+    max-width: 1136px;
+    display: flex;
+    align-items: center;
+    .roadMap_Image {
+      width: 100%;
+      min-height: 1328.47px;
+      transform: rotate(6deg);
+    }
+    .roadMap_heading {
+      max-width: 78px;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 43px;
+      text-transform: uppercase;
+      color: $finPrimaryColor;
+    }
+    .roadMap_Image {
+    }
+  }
+}

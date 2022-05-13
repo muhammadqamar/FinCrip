@@ -1,14 +1,12 @@
 import React from "react";
 import Layout from "../components/layout";
-import Universe from "../components/universe";
+import HomePage from "../components/homePage";
 
 const Index = () => {
   return (
-    <>
-      <Layout>
-        <Universe />
-      </Layout>
-    </>
+    <Layout>
+      <HomePage />
+    </Layout>
   );
 };
 

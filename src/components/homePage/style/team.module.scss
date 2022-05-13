@@ -1,0 +1,55 @@
+.team_main {
+  width: 100%;
+  .team_section {
+    .team_heading {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 57px;
+      text-align: center;
+      margin-bottom: 70px;
+      color: $finPrimaryColor;
+    }
+  }
+  .team_cards {
+    .card {
+      max-width: 309px;
+      min-height: 425px;
+      padding: 50px 21px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border-width: 1px;
+      border-style: solid;
+      border-image-source: linear-gradient(
+        180deg,
+        #01d6fe -8.64%,
+        #008bd9 52.14%,
+        #10ffb7 134.09%
+      );
+      -webkit-background-clip: border;
+      // -webkit-text-fill-color: transparent;
+      background: rgba(0, 0, 0, 0.31);
+      .card_heading {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 43px;
+        margin: 20px 0 10px;
+        background: linear-gradient(
+          180deg,
+          #01d6fe 0%,
+          #008bd9 31.25%,
+          #10ffb7 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .card_para {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: $White;
+      }
+    }
+  }
+}
