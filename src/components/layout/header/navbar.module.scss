@@ -1,73 +1,22 @@
-.main_container {
-  width: 100%;
-  background-image: url("/icons/background_img.svg");
-  .container-fluid {
-    max-width: 1140px;
-    padding: 0 !important;
-    .nav_logo {
-      // margin-right: 64px !important;
-    }
-    .nav_linksBtn {
-      width: 100%;
-    }
-    .navbar-nav {
-      align-items: center;
-      margin-left: auto;
-      .nav_Home {
-        position: relative;
-      }
-      a.nav-link {
-        max-width: 113px;
-        color: #fff !important;
-        padding: 0;
-        margin-right: 40px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        text-transform: uppercase;
-      }
-      @media only screen and (max-width: 992px) {
-        /* For mobile phones: */
-        a.nav-link {
-          margin: 0 0 25px;
-        }
-      }
-      a.lang_link {
-        margin: 0 10px;
-      }
-      @media only screen and (max-width: 992px) {
-        /* For mobile phones: */
-        a.lang_link {
-          margin: 15px 0;
-        }
-      }
-      .btn-primary {
-        min-width: 152px;
-        min-height: 56px;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 24px;
-        background: #ff6600;
-        border-radius: 30px;
-        padding: 0px 20px;
-        text-transform: uppercase;
-        margin-right: 40px;
-      }
-      .btn-primary:focus {
-        box-shadow: none;
-      }
-      @media only screen and (max-width: 992px) {
-        /* For mobile phones: */
-        .btn-primary {
-          margin: 0 0 15px;
-        }
-      }
-    }
+.join_btn {
+  min-width: 152px;
+  min-height: 56px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  background: #ff6600;
+  border-radius: 30px;
+  padding: 0px 20px;
+  text-transform: uppercase;
+  margin-right: 40px;
+  border: none;
+  font-family: "Advent Pro";
+
+  .btn-primary:focus {
+    box-shadow: none;
   }
-  .polygon_img {
-    position: absolute;
-    bottom: 0;
+  @media (max-width: 992px) {
+    margin: 0 0 15px;
   }
 }

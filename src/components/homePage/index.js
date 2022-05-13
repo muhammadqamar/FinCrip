@@ -5,6 +5,8 @@ import KeyFeatures from "./keyFeatures";
 import Team from "./team";
 import RoadMap from "./roadMap";
 import Faq from "./faq";
+import OverVision from "./overVision";
+import TokenMetrics from "./tokenMetrics";
 
 const Index = () => {
   return (
@@ -15,6 +17,8 @@ const Index = () => {
       <Team />
       <RoadMap />
       <Faq />
+      <OverVision />
+      <TokenMetrics />
     </>
   );
 };

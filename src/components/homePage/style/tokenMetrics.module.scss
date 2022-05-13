@@ -1,0 +1,90 @@
+// font-family: 'Orbitron', sans-serif;
+.tokenMetrics {
+  max-width: 948px;
+  margin: auto;
+
+  .heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    color: $White;
+  }
+
+  .tokens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+
+    .tooken_one {
+      width: 244px;
+      height: 243px;
+      background-image: url(/icons/metrics-token.svg);
+      background-repeat: no-repeat;
+      background-size: center;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 40px;
+
+      .tooken_image {
+        width: 76px;
+        height: 77px;
+        margin-bottom: 10px;
+      }
+
+      .tooken_name {
+        font-family: "Orbitron";
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: $White;
+        margin: 0;
+      }
+    }
+  }
+  .bar_tokens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .b_token {
+      width: 468px;
+      height: 284px;
+      background-image: url(/icons/bar-token.svg);
+      background-repeat: no-repeat;
+      background-size: center;
+      background-position: center;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      padding: 111px 66px 44px 70px;
+
+      .b_token_name {
+        font-family: "Orbitron";
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        color: $White;
+        margin: 0;
+      }
+
+      .b_token_number {
+        font-family: "Orbitron";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 30px;
+        color: $White;
+        text-align: right;
+        margin: 0;
+      }
+    }
+  }
+}

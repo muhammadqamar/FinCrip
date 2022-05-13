@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import style from "./navbar.module.scss";
+import styles from "./navbar.module.scss";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 
 const Index = () => {
   return (
     <>
-      <Navbar className="main_container" bg="dark" expand="lg">
+      <Navbar expand="lg">
         <Container fluid>
           <Image
             className="nav_logo"
@@ -28,7 +28,7 @@ const Index = () => {
               <Nav.Link href="#action2">Key Features</Nav.Link>
               <Nav.Link href="#action2">Tokenomics</Nav.Link>
               <Nav.Link href="#action2">Road Map</Nav.Link>
-              <Button>join presale</Button>
+              <Button className={styles.join_btn}>join presale</Button>
               <Image
                 alt="nav_img"
                 src="/icons/Space_Flag.svg"
@@ -43,13 +43,6 @@ const Index = () => {
                 src="/icons/nav_arrow.svg"
                 width={11}
                 height={5}
-              />
-              <Image
-                className="polygon_img"
-                alt="nav_img"
-                src="/icons/polygon.svg"
-                width={20}
-                height={20}
               />
             </Nav>
           </Navbar.Collapse>

@@ -6,7 +6,7 @@ import { Button, Container } from "react-bootstrap";
 const MainSection = () => {
   return (
     <div className={style.universe_container}>
-      <Container className={style.main_universe}>
+      <div className={style.main_universe}>
         <Container className={style.universe_section}>
           <div className={style.universeLeft_section}>
             <h5 className={style.universe_heading}>The wait is over.</h5>
@@ -29,17 +29,9 @@ const MainSection = () => {
               />
             </Button>
           </div>
-          <div className={style.universeRight_section}>
-            <Image
-              className={style.right_logo}
-              alt="right_logo"
-              src="/icons/finspace_logo.svg"
-              width={555}
-              height={554}
-            />
-          </div>
+          <img className={style.right_logo} alt="right_logo" src="/icons/finspace_logo.svg" />
         </Container>
-      </Container>
+      </div>
     </div>
   );
 };
