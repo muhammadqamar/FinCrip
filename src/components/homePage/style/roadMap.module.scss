@@ -1,19 +1,39 @@
 .roadMap_main {
-  background-image: url("/icons/roadMap_background.svg");
+  background-image: url('/BGalone.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-position: center;
-  //   transform: rotate(100.74deg);
-  min-height: 1023px;
+
+  margin: 80px 0px;
   .roadMap_section {
-    max-width: 1136px;
+    max-width: 1130px;
     display: flex;
-    align-items: center;
+    padding: 0px 30px;
+    position: relative;
+    margin: 0 auto;
+
+    .liner {
+      display: block;
+      @media (max-width: 1130px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 1130px) {
+      padding: 0px;
+    }
+    .liner2 {
+      display: none;
+      @media (max-width: 1130px) {
+        display: block;
+      }
+    }
     .roadMap_Image {
       width: 100%;
       min-height: 1328.47px;
       transform: rotate(6deg);
     }
+
     .roadMap_heading {
       max-width: 78px;
       font-weight: 700;
@@ -21,8 +41,153 @@
       line-height: 43px;
       text-transform: uppercase;
       color: $finPrimaryColor;
+      position: absolute;
+      top: 50%;
+      left: 30px;
+      transform: translate(0, -50%);
+      @media (max-width: 1130px) {
+        top: 0;
+        max-width: 100%;
+        transform: translate(0, 0%);
+        padding-top: 40px;
+      }
     }
-    .roadMap_Image {
+
+    .flexdiv {
+      display: flex;
+      @media (max-width: 1130px) {
+        flex-direction: column;
+      }
+    }
+
+    .box1 {
+      display: flex;
+      color: White;
+      position: absolute;
+      @media (max-width: 1130px) {
+        align-items: center;
+      }
+
+
+      .box {
+        width: 30px;
+        height: 30px;
+        background: #0b151a;
+        border: 2px solid #00bbff;
+        border-radius: 50%;
+        flex-shrink: 0;
+        @media (max-width: 1130px) {
+          width: 15px;
+          height: 15px;
+          margin-right: 70px;
+          flex-shrink: 0;
+        }
+
+      }
+      &:hover {
+        .box {
+        background: #00bbff;
+        }
+      }
+
+      h5 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        padding: 0px 30px 0px 9px;
+        color: #ffffff;
+        @media (max-width: 1130px) {
+          padding: 0px;
+        }
+      }
+
+      p {
+        max-width: 377px;
+        opacity: 0.65;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        @media (max-width: 1130px) {
+          max-width: 320px;
+        }
+      }
+    }
+
+    .rocket {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 240px;
+      left: 34.5%;
+
+      @media (max-width: 1130px) {
+        left: 45px;
+        top: 210px;
+        img {
+           display:none
+        }
+      }
+      .mobiler {
+        display: none;
+        @media (max-width: 1130px) {
+          display: block;
+        }
+      }
+      h6 {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 20px;
+        color: #00bbff;
+        @media (max-width: 1130px) {
+         padding-left: 30px;
+        }
+      }
+    }
+
+    .first {
+      left: 34.5%;
+      top: 152px;
+      @media (max-width: 1130px) {
+        left: 47px;
+        top: 133px;
+      }
+    }
+    .second {
+      left: 40%;
+      top: 388px;
+      @media (max-width: 1130px) {
+        left: 80px;
+        top: 267px;
+
+        .box {
+          margin-right: 40px;
+        }
+      }
+    }
+    .third {
+      left: 40.5%;
+      top: 622px;
+      @media (max-width: 1130px) {
+        left: 80px;
+        top: 398px;
+        .box {
+          margin-right: 40px;
+        }
+      }
+    }
+
+    .four {
+      left: 36.5%;
+      top: 854px;
+
+      @media (max-width: 1130px) {
+        left: 45px;
+        top: 529px;
+        .box {
+          margin-right: 75px;
+        }
+      }
     }
   }
 }
