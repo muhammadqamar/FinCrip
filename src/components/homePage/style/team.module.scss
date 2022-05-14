@@ -21,24 +21,21 @@
     }
     .card {
       max-width: 309px;
-      min-height: 425px;
+      min-height: 447px;
       padding: 50px 21px;
       margin-left: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      border-width: 1px;
-      border-style: outset;
-      border: 1px solid;
+      border: 1px solid transparent;
+      border-image-slice: 1;
       border-image-source: linear-gradient(
         180deg,
         #01d6fe -8.64%,
         #008bd9 52.14%,
         #10ffb7 134.09%
       );
-      -webkit-background-clip: border;
-      // -webkit-text-fill-color: transparent;
       background: rgba(0, 0, 0, 0.31);
       .card_heading {
         font-weight: 700;

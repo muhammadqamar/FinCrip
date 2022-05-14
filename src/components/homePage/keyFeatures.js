@@ -29,27 +29,24 @@ const lastCard = [
 
 const KeyFeatures = () => {
   return (
-    <div className={style.feature_main}>
-      <Container className={style.feature_section}>
-        <div className={style.feature_head}>
-          <h5 className={style.feature_heading}>Key Features</h5>
-        </div>
-        <div className={style.feature_cards}>
-          {card.map((item) => (
-            <div className={style.feature_card}>
-              <h6 className={style.card_heading}>{item.heading}</h6>
-              <p className={style.card_para}>{item.para}</p>
-            </div>
-          ))}
-        </div>
-        {lastCard.map((item) => (
-          <div className={`${style.feature_card}${style.feature_lastcard}`}>
+    <Container className={style.feature_section}>
+      <h5 className={style.feature_heading}>Key Features</h5>
+
+      <div className={style.feature_cards}>
+        {card.map((item) => (
+          <div className={style.feature_card}>
             <h6 className={style.card_heading}>{item.heading}</h6>
             <p className={style.card_para}>{item.para}</p>
           </div>
         ))}
-      </Container>
-    </div>
+      </div>
+      {lastCard.map((item) => (
+        <div className={`${style.feature_card}${style.feature_lastcard}`}>
+          <h6 className={style.card_heading}>{item.heading}</h6>
+          <p className={style.card_para}>{item.para}</p>
+        </div>
+      ))}
+    </Container>
   );
 };
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700&family=Sedgwick+Ave&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&family=Orbitron:wght@400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&family=Sedgwick+Ave&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -81,4 +81,73 @@ button {
       }
     }
   }
+}
+
+// faq
+
+.accordion {
+  .accordion-item {
+    background-color: transparent !important;
+    border: 1px solid;
+    border-image-slice: 1 !important;
+    border-image: linear-gradient(180deg, #01d6fe 0%, #008bd9 31.25%, #10ffb7 100%);
+    margin-bottom: 20px;
+  }
+  .accordion-item:first-of-type .accordion-button,
+  .accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 0 !important;
+  }
+  .accordion-item:first-of-type .accordion-button {
+    border-top: none !important;
+  }
+  .accordion-button {
+    justify-content: center !important;
+    font-family: "Advent Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    padding: 10px !important;
+    color: $finPrimaryColor;
+    background-color: transparent !important;
+    border-top: 1px solid;
+    &:focus {
+      box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%) !important;
+    }
+    &::after {
+      display: none !important;
+      background-image: none !important;
+    }
+    &:not(.collapsed) {
+      color: $finPrimaryColor;
+    }
+    &:hover {
+      border-top: 1px solid !important;
+      border-image-slice: 1 !important;
+      border-image: linear-gradient(180deg, #01d6fe 0%, #008bd9 31.25%, #10ffb7 100%);
+      color: $White;
+      background: rgba(1, 214, 254, 0.37) !important;
+    }
+  }
+
+  .accordion-body {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: $White;
+    padding: 0 97px 10px !important ;
+  }
+}
+
+.three-banner-bg-image {
+  width: 100%;
+  height: 100%;
+  background-image: url(/icons/three-banner-img.svg);
+  background-position: unset;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -19,14 +19,8 @@ const MainSection = () => {
             </p>
             <Button className={`${style.universe_btn} ${style.whitePaper_btn}`}>Whitepaper</Button>
             <Button className={`${style.universe_btn} ${style.joinPresale_btn}`}>
-              Join Presale
-              <Image
-                className={style.arrow_btn}
-                alt="arrow_Image"
-                src="/icons/btn_arrow.svg"
-                width={19.8}
-                height={0}
-              />
+              Join Presale &nbsp;
+              <Image alt="arrow_Image" src="/icons/btn_arrow.svg" width={19.8} height={19.8} />
             </Button>
           </div>
           <img className={style.right_logo} alt="right_logo" src="/icons/finspace_logo.svg" />

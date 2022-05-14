@@ -1,6 +1,9 @@
 .universe_container {
   width: 100%;
   background-image: url("/icons/universe_background.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   .main_universe {
     width: 100%;
     height: 822px;
@@ -17,7 +20,7 @@
       padding: 188px 92px 0 154px;
       .universeLeft_section {
         max-width: 663px;
-
+        // flex-shrink: 0;
         .universe_heading {
           font-style: normal;
           font-weight: 700;
@@ -46,22 +49,24 @@
         .whitePaper_btn {
           background: #ff6600;
           box-shadow: 0px 0px 16px rgba(255, 102, 0, 0.77);
+          border: none !important;
+          margin-right: 31px;
         }
         .joinPresale_btn {
-          // opacity: 25%;
+          width: 254px;
+          height: 76px;
+          padding: 20px 20px !important;
           background: transparent;
-          margin-left: 31px;
-          border: 2px solid;
-          border-image-source: linear-gradient(
-            94.33deg,
-            #01d8fc 0%,
-            rgba(1, 214, 254, 0.16) 103.1%
-          );
+          border: 2px solid transparent;
+          border-image: linear-gradient(94.33deg, #01d8fc 0%, rgba(1, 214, 254, 0.16) 103.1%);
+          border-image-slice: 1;
+          border-radius: 10px;
         }
         .joinPresale_btn:focus {
           box-shadow: none;
         }
         .universe_btn {
+          font-family: "Advent Pro";
           font-weight: 700;
           font-size: 30px;
           line-height: 36px;
