@@ -2,25 +2,39 @@
   width: 100%;
   background-image: url("/icons/universe_background.svg");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: contain;
   .main_universe {
-    width: 100%;
-    height: 822px;
-    background-image: url(/icons/sphere-bg-main.svg);
-    background-repeat: no-repeat;
-    background-size: 827px 827px;
-    background-position-x: 697px;
-    background-position-y: 43px;
+    min-height: 822px;
 
     .universe_section {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+      align-items: center;
       max-width: 1440px;
-      padding: 188px 92px 0 154px;
+      padding: 60px 92px 0 154px;
+
+      @media (min-width: 1230px) and (max-width: 1300px) {
+        padding-left: 92px;
+      }
+      @media (min-width: 900px) and(max-width: 1229px) {
+        padding: 60px 30px 0;
+      }
+
+      @media (max-width: 899px) {
+        padding: 152px 30px 0;
+      }
+      @media (max-width: 799px) {
+        flex-direction: column;
+      }
+
       .universeLeft_section {
         max-width: 663px;
-        // flex-shrink: 0;
+        text-align: left;
+        @media (max-width: 699px) {
+          text-align: center;
+        }
+
         .universe_heading {
           font-style: normal;
           font-weight: 700;
@@ -29,6 +43,11 @@
           margin-bottom: 16px;
           text-transform: uppercase;
           color: $White;
+
+          @media (max-width: 699px) {
+            font-size: 44px;
+            line-height: 60px;
+          }
         }
         .universe_innerHeading {
           font-style: normal;
@@ -37,6 +56,11 @@
           line-height: 43px;
           text-transform: uppercase;
           color: $finPrimaryColor;
+
+          @media (max-width: 699px) {
+            font-size: 26px;
+            line-height: 31px;
+          }
         }
         .universe_para {
           font-style: normal;
@@ -51,16 +75,26 @@
           box-shadow: 0px 0px 16px rgba(255, 102, 0, 0.77);
           border: none !important;
           margin-right: 31px;
+
+          @media (max-width: 557px) {
+            margin: 0 0 31px;
+          }
         }
         .joinPresale_btn {
           width: 254px;
           height: 76px;
-          padding: 20px 20px !important;
+          padding: 20px !important;
           background: transparent;
           border: 2px solid transparent;
           border-image: $BtnLinearGradient;
           border-image-slice: 1;
           border-radius: 10px;
+
+          @media (max-width: 699px) {
+            padding: 16px !important;
+            width: 216px;
+            height: 65px;
+          }
         }
         .joinPresale_btn:focus {
           box-shadow: none;
@@ -75,12 +109,43 @@
           padding: 20px 30px;
           border-color: none;
           text-transform: uppercase;
+
+          @media (max-width: 699px) {
+            font-size: 26px;
+            line-height: 29px;
+            padding: 18px 46px;
+          }
         }
       }
 
-      .right_logo {
-        width: 555px;
-        height: 554px;
+      .space_right_bg {
+        // width: 827px;
+        width: 535px;
+        height: 827px;
+        background-image: url(/icons/sphere-bg-main.svg);
+        background-repeat: no-repeat;
+        background-size: a;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+
+        @media (min-width: 799px) and (max-width: 1229px) {
+          width: 335px;
+        }
+        @media (min-width: 699px) and (max-width: 799px) {
+          width: 100%;
+          height: 827px;
+        }
+
+        @media (max-width: 699px) {
+          flex-shrink: inherit;
+          width: 100%;
+          height: 100%;
+          margin-top: 40px;
+          background-image: none;
+        }
       }
     }
   }

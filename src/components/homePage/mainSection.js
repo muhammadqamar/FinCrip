@@ -23,7 +23,9 @@ const MainSection = () => {
               <Image alt="arrow_Image" src="/icons/btn_arrow.svg" width={19.8} height={19.8} />
             </Button>
           </div>
-          <img className={style.right_logo} alt="right_logo" src="/icons/finspace_logo.svg" />
+          <div className={style.space_right_bg}>
+            <Image width={555} height={554} alt="right_logo" src="/icons/finspace_logo.svg" />
+          </div>
         </Container>
       </div>
     </div>
