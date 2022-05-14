@@ -3,6 +3,28 @@ import Image from "next/image";
 import style from "./style/finCrip.module.scss";
 import { Container } from "react-bootstrap";
 
+const finCard = [
+  {
+    img: "/icons/fin_iconOne.svg",
+    heading: "Almost instant transfers",
+    para: "Transactions on Fincrip are finalized in a second and cost a fraction of a cent",
+  },
+  {
+    img: "/icons/fin_iconTwo.svg",
+    heading: "Simply secure",
+    para: "Fincrip validator nodes form a global, trustless and leaderless proof-of-stake network",
+  },
+  {
+    img: "/icons/fin_iconThree.svg",
+    heading: "Highly scalable",
+    para: "Fincrip can process thousands of transactions per seconds and scales to thousands of nodes",
+  },
+  {
+    img: "/icons/fin_iconFour.svg",
+    heading: "Ethereum compatible",
+    para: "Fincrip is EVM compatible, deploy and run your Ethereum dApps on Fincrip",
+  },
+];
 const FinProtocol = () => {
   return (
     <div className={style.finCrip_section}>
@@ -21,20 +43,14 @@ const FinProtocol = () => {
           </p>
         </div>
         <Container className={style.fincrip_cards}>
-          <div className={style.finFrame_section}>
-            <Image
-              alt="fincrip_icon"
-              src="/icons/fin_iconOne.svg"
-              width={50}
-              height={50}
-            />
-            <h5 className={style.finCard_heading}>Almost instant transfers</h5>
-            <p className={style.finCard_para}>
-              Transactions on Fincrip are finalized in a second and cost a
-              fraction of a cent
-            </p>
-            <div className={style.card_border} />
-          </div>
+          {finCard.map((item) => (
+            <div className={style.finFrame_section}>
+              <Image alt="fincrip_icon" src={item.img} width={50} height={50} />
+              <h5 className={style.finCard_heading}>{item.heading}</h5>
+              <p className={style.finCard_para}>{item.para}</p>
+              <div className={style.card_border} />
+            </div>
+          ))}
         </Container>
       </Container>
     </div>

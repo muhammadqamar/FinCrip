@@ -25,6 +25,8 @@
       }
     }
     .fincrip_cards {
+      display: flex;
+      justify-content: space-around;
       margin: 40px 0 80px;
       .finFrame_section {
         max-width: 277px;

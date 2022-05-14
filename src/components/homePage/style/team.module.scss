@@ -11,16 +11,26 @@
     }
   }
   .team_cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .last_cards {
+      max-width: 469px !important;
+      min-height: 375px !important;
+      margin-top: 10px;
+    }
     .card {
       max-width: 309px;
       min-height: 425px;
       padding: 50px 21px;
+      margin-left: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       border-width: 1px;
-      border-style: solid;
+      border-style: outset;
+      border: 1px solid;
       border-image-source: linear-gradient(
         180deg,
         #01d6fe -8.64%,

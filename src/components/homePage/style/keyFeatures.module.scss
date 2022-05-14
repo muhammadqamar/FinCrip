@@ -11,6 +11,11 @@
       }
     }
     .feature_cards {
+      max-width: 946px;
+      display: flex;
+      justify-content: space-around;
+      margin: auto;
+      flex-wrap: wrap;
       .feature_card {
         max-width: 426px;
         padding: 35px 26px;

@@ -3,3 +3,25 @@ $White: #ffffff;
 $finPrimaryColor: #01d6fe;
 $finSecondaryColor: #02131b;
 $fincaptionColor: #1f979e;
+
+// Background Color
+$background: rgba(1, 214, 254, 0.37);
+
+// Linear Gradient
+$BtnLinearGradient: linear-gradient(
+  94.33deg,
+  #01d8fc 0%,
+  rgba(1, 214, 254, 0.16) 103.1%
+);
+$BorderLinearGradient: linear-gradient(
+  180deg,
+  #01d6fe 0%,
+  #008bd9 31.25%,
+  #10ffb7 100%
+);
+$TextLinearGradient: linear-gradient(
+  180deg,
+  #01d6fe 0%,
+  #008bd9 31.25%,
+  #10ffb7 100%
+);
