@@ -44,6 +44,16 @@
         color: $White;
         margin: 0;
       }
+      @media (max-width: 767px) {
+        margin-bottom: 38px;
+      }
+    }
+    @media (max-width: 991px) {
+      margin: 40px 0;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+      justify-content: center;
     }
   }
   .bar_tokens {
@@ -86,5 +96,11 @@
         margin: 0;
       }
     }
+    @media (max-width: 991px) {
+      justify-content: center;
+    }
+  }
+  @media (max-width: 991px) {
+    padding: 0 30px;
   }
 }

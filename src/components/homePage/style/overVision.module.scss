@@ -13,6 +13,9 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
   &::after {
     content: "";
@@ -25,8 +28,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
-
   .overVision {
     max-width: 1440px;
     margin: auto;
@@ -34,14 +39,18 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 80px;
+    padding: 0 20px;
     .image_box {
       img {
         width: 604.23px;
+        @media (max-width: 991px) {
+          width: 100%;
+        }
       }
     }
-
     .about_box {
       max-width: 442px;
+
       .about_head {
         font-weight: 700;
         font-size: 48px;
@@ -56,9 +65,15 @@
         color: $White;
         margin: 0;
       }
+      @media (max-width: 991px) {
+        max-width: max-content;
+      }
+    }
+    @media (max-width: 991px) {
+      flex-direction: column;
+      text-align: center;
     }
   }
-
   .bottom_content {
     text-align: center;
     margin-bottom: 79px;
@@ -77,6 +92,15 @@
       line-height: 24px;
       color: $White;
       margin: 0;
+      @media (max-width: 991px) {
+        margin: 20px 0 0;
+      }
     }
+    @media (max-width: 991px) {
+      margin: 0 0 50px;
+    }
+  }
+  @media (max-width: 991px) {
+    padding: 0 30px;
   }
 }

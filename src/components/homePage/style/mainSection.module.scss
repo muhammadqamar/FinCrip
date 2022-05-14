@@ -58,7 +58,7 @@
           padding: 20px 20px !important;
           background: transparent;
           border: 2px solid transparent;
-          border-image: linear-gradient(94.33deg, #01d8fc 0%, rgba(1, 214, 254, 0.16) 103.1%);
+          border-image: $BtnLinearGradient;
           border-image-slice: 1;
           border-radius: 10px;
         }
