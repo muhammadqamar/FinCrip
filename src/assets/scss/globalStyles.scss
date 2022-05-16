@@ -37,22 +37,40 @@ button {
 }
 
 //Navbar
-.navbar {
-  background-image: url("/icons/nav_backPic.svg");
-  // background: #02131b;
-  // min-height: 57.9px;
-  padding: 0 !important;
-  width: 100%;
+
+.chang-color {
+  background: #02131b;
+  height: 100px;
+  top: 0;
+  position: sticky !important;
+
+  @media (max-width: 1030px) {
+    padding: 27px 30px !important;
+  }
+  @media (max-width: 768px) {
+    top: 0;
+  }
+}
+
+.not-color {
+  background: transparent !important;
   position: absolute !important;
   top: 57px;
-  z-index: 999;
+
+  @media (max-width: 768px) {
+    top: 50px;
+  }
 
   @media (max-width: 1030px) {
     padding: 0 30px !important;
   }
-  @media (max-width: 768px) {
-    top: 50px;
-  }
+}
+
+.navbar {
+  background-image: url("/icons/nav_backPic.svg");
+  width: 100%;
+  z-index: 999;
+  transition: all 0.6s ease-in-out;
 
   .navbar-toggler-icon {
     background-image: url("/icons/nav_menu.svg") !important;
@@ -217,12 +235,7 @@ button {
     &:hover {
       border-top: 1px solid !important;
       border-image-slice: 1 !important;
-      border-image: linear-gradient(
-        180deg,
-        #01d6fe 0%,
-        #008bd9 31.25%,
-        #10ffb7 100%
-      );
+      border-image: linear-gradient(180deg, #01d6fe 0%, #008bd9 31.25%, #10ffb7 100%);
       color: $White;
       background: rgba(1, 214, 254, 0.37) !important;
     }
