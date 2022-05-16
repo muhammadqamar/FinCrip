@@ -155,12 +155,7 @@ button {
     &:hover {
       border-top: 1px solid !important;
       border-image-slice: 1 !important;
-      border-image: linear-gradient(
-        180deg,
-        #01d6fe 0%,
-        #008bd9 31.25%,
-        #10ffb7 100%
-      );
+      border-image: linear-gradient(180deg, #01d6fe 0%, #008bd9 31.25%, #10ffb7 100%);
       color: $White;
       background: rgba(1, 214, 254, 0.37) !important;
     }
@@ -186,3 +181,8 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+// .progress {
+//   height: 24px !important;
+//   background-color: transparent !important;
+// }

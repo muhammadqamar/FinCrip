@@ -1,5 +1,5 @@
 import React from "react";
-
+import ProgressBar from "react-bootstrap/ProgressBar";
 import styles from "./style/tokenMetrics.module.scss";
 
 const token = [
@@ -30,6 +30,8 @@ const tokenMetrics = () => {
           </div>
         ))}
       </div>
+      {/* <ProgressBar now={60} label={`${60}%`} />*/}
+
       <div className={styles.bar_tokens}>
         {barsToken.map((item) => (
           <div key={item.key} className={styles.b_token}>
