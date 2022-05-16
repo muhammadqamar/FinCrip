@@ -182,7 +182,20 @@ button {
   background-size: cover;
 }
 
-// .progress {
-//   height: 24px !important;
-//   background-color: transparent !important;
-// }
+.progress {
+  height: 24px !important;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+
+  @media (max-width: 390px) {
+    height: 17px !important;
+  }
+
+  .progress-bar {
+    background-color: #0aeffd !important;
+    font-family: "Orbitron";
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

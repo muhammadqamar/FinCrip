@@ -92,10 +92,14 @@
       display: flex;
       justify-content: space-between;
       flex-direction: column;
-      padding: 111px 66px 44px 70px;
+      padding: 52px 66px 44px 65px;
 
-      @media (max-width: 767px) {
-        padding: 110px 50px 73px 65px;
+      @media (min-width: 499px) and (max-width: 767px) {
+        padding: 51px 64px 52px 64px;
+      }
+
+      @media (max-width: 498px) {
+        padding: 77px 46px 74px 44px;
       }
 
       @media (max-width: 490px) {
@@ -111,10 +115,17 @@
         color: $White;
         margin: 0;
 
-        @media (max-width: 767px) {
+        @media (min-width: 391px) and (max-width: 767px) {
+          font-size: 28px;
+          line-height: 35px;
+          text-align: center;
+        }
+
+        @media (max-width: 390px) {
           font-size: 28px;
           line-height: 35px;
           text-align: left;
+          margin-left: 20px;
         }
       }
 
