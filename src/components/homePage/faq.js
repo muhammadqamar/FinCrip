@@ -8,32 +8,44 @@ const Faq = () => {
       <h5 className={style.fag_heading}>FAQ</h5>
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
-          <Accordion.Header>On what blockchain network is Juranust token built?</Accordion.Header>
-          <Accordion.Body>
-            Donec commodo molestie est, id tincidunt nisl luctus eu. Ut vel laoreet dolor. Interdum
-            et malesuada fames ac ante ipsum primis in faucibus. Sed sit amet turpis quam.
-          </Accordion.Body>
+          <Accordion.Header>
+            On what blockchain network is FINCRIP token built?
+          </Accordion.Header>
+          <Accordion.Body>Polygon</Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="1">
-          <Accordion.Header>On what blockchain network is Juranust token built?</Accordion.Header>
-          <Accordion.Body>
-            Donec commodo molestie est, id tincidunt nisl luctus eu. Ut vel laoreet dolor. Interdum
-            et malesuada fames ac ante ipsum primis in faucibus. Sed sit amet turpis quam.
-          </Accordion.Body>
+          <Accordion.Header>Where can I buy $FCP Token?</Accordion.Header>
+          <Accordion.Body>On Pancakeswap and Quickswap</Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="2">
-          <Accordion.Header>On what blockchain network is Juranust token built?</Accordion.Header>
+          <Accordion.Header>What is gas fee?</Accordion.Header>
           <Accordion.Body>
-            Donec commodo molestie est, id tincidunt nisl luctus eu. Ut vel laoreet dolor. Interdum
-            et malesuada fames ac ante ipsum primis in faucibus. Sed sit amet turpis quam.
+            A gas fee is something all users must pay in order to perform any
+            function on the FINCRIP Protocol.
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="3">
-          <Accordion.Header>On what blockchain network is Juranust token built?</Accordion.Header>
+          <Accordion.Header>What is NFTs</Accordion.Header>
           <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            NFTs are unique cryptographic tokens that exist on a blockchain and
+            cannot be replicated
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="4">
+          <Accordion.Header>
+            How much liquidity must be locked?
+          </Accordion.Header>
+          <Accordion.Body>
+            There is NO minimum liquidity requirement
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="5">
+          <Accordion.Header>
+            Why you should invest in FINCRIP PROTOCOL?
+          </Accordion.Header>
+          <Accordion.Body>
+            Safety-Liquidity - Contract Audited -Community Driven -Utilities
+            -NFT Marketplace -Play to Earn Game potential -Staking Rewards
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
