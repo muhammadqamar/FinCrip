@@ -13,10 +13,10 @@ const RoadMap = () => {
         <div className={`${style.box1} ${style.first}`}>
           <div className={style.box} />
           <div className={style.flexdiv}>
-            <h5>Q1, 2023</h5>
+            <h5>Q2,2022</h5>
             <p>
-              Mobile app version(Android & IOS) - NASA Collaboration - Full
-              gaming launch
+              Pre-sale - Financing with ICOs and investors -Promote ICOs on
+              major social media platform - Airdrops - Bounties
             </p>
           </div>
         </div>
@@ -30,10 +30,10 @@ const RoadMap = () => {
         <div className={`${style.box1} ${style.second}`}>
           <div className={style.box} />
           <div className={style.flexdiv}>
-            <h5>Q2,2022</h5>
+            <h5>Q3, 2022</h5>
             <p>
-              Pre-sale - Financing with ICOs and investors -Promote ICOs on
-              major social media platform - Airdrops - Bounties
+              On going promotion - Continue financing with ICOs and investors -
+              More ICO promotions on major social media platform - AMA
             </p>
           </div>
         </div>
@@ -41,10 +41,10 @@ const RoadMap = () => {
           <div className={style.box} />
           <div className={style.flexdiv}>
             <div className={style.flexdiv}>
-              <h5>Q3, 2022</h5>
+              <h5>Q4, 2022</h5>
               <p>
-                On going promotion - Continue financing with ICOs and investors
-                - More ICO promotions on major social media platform - AMA
+                Website developmnt - Web app development - Intense marketing on
+                socail media platforms
               </p>
             </div>
           </div>
@@ -52,10 +52,10 @@ const RoadMap = () => {
         <div className={`${style.box1} ${style.four}`}>
           <div className={style.box} />
           <div className={style.flexdiv}>
-            <h5>Q4, 2022</h5>
+            <h5>Q1, 2023</h5>
             <p>
-              Website developmnt - Web app development - Intense marketing on
-              socail media platforms
+              Mobile app version(Android & IOS) - NASA Collaboration - Full
+              gaming launch
             </p>
           </div>
         </div>
