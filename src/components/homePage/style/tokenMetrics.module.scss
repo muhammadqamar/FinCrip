@@ -16,12 +16,36 @@
     justify-content: space-between;
     margin-bottom: 80px;
 
+    @media (max-width: 767px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @media (min-width: 768px) and (max-width: 832px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    & :first-child {
+      margin-right: 0;
+      @media (min-width: 768px) and (max-width: 832px) {
+        margin-right: auto;
+      }
+    }
+
+    & :last-child {
+      margin-top: 0;
+      @media (min-width: 768px) and (max-width: 832px) {
+        margin-top: 80px;
+      }
+    }
+
     .tooken_one {
       width: 244px;
       height: 243px;
       background-image: url(/icons/metrics-token.svg);
       background-repeat: no-repeat;
-      background-size: center;
+      background-size: cover;
       background-position: center;
       display: flex;
       align-items: center;
@@ -51,10 +75,6 @@
     @media (max-width: 991px) {
       margin: 40px 0;
     }
-    @media (max-width: 767px) {
-      flex-direction: column;
-      justify-content: center;
-    }
   }
   .bar_tokens {
     display: flex;
@@ -67,13 +87,24 @@
       height: 284px;
       background-image: url(/icons/bar-token.svg);
       background-repeat: no-repeat;
-      background-size: center;
+      background-size: contain;
       background-position: center;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
+      padding: 52px 66px 44px 65px;
 
-      padding: 111px 66px 44px 70px;
+      @media (min-width: 499px) and (max-width: 767px) {
+        padding: 51px 64px 52px 64px;
+      }
+
+      @media (max-width: 498px) {
+        padding: 77px 46px 74px 44px;
+      }
+
+      @media (max-width: 490px) {
+        width: 100%;
+      }
 
       .b_token_name {
         font-family: "Orbitron";
@@ -83,6 +114,19 @@
         text-align: center;
         color: $White;
         margin: 0;
+
+        @media (min-width: 391px) and (max-width: 767px) {
+          font-size: 28px;
+          line-height: 35px;
+          text-align: center;
+        }
+
+        @media (max-width: 390px) {
+          font-size: 28px;
+          line-height: 35px;
+          text-align: left;
+          margin-left: 20px;
+        }
       }
 
       .b_token_number {
@@ -94,6 +138,11 @@
         color: $White;
         text-align: right;
         margin: 0;
+
+        @media (max-width: 767px) {
+          font-size: 16px;
+          line-height: 20px;
+        }
       }
     }
     @media (max-width: 991px) {

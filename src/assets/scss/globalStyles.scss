@@ -215,12 +215,7 @@ button {
     &:hover {
       border-top: 1px solid !important;
       border-image-slice: 1 !important;
-      border-image: linear-gradient(
-        180deg,
-        #01d6fe 0%,
-        #008bd9 31.25%,
-        #10ffb7 100%
-      );
+      border-image: linear-gradient(180deg, #01d6fe 0%, #008bd9 31.25%, #10ffb7 100%);
       color: $White;
       background: rgba(1, 214, 254, 0.37) !important;
     }
@@ -245,4 +240,22 @@ button {
   background-position: unset;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.progress {
+  height: 24px !important;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+
+  @media (max-width: 390px) {
+    height: 17px !important;
+  }
+
+  .progress-bar {
+    background-color: #0aeffd !important;
+    font-family: "Orbitron";
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
