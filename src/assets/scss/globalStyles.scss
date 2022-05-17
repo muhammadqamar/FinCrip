@@ -7,6 +7,7 @@
 
 body {
   background-color: #02131b !important;
+  scroll-behavior: smooth;
 }
 
 p,
@@ -38,7 +39,8 @@ button {
 //Navbar
 .navbar {
   background-image: url("/icons/nav_backPic.svg");
-
+  // background: #02131b;
+  // min-height: 57.9px;
   padding: 0 !important;
   width: 100%;
   position: absolute !important;
@@ -215,7 +217,12 @@ button {
     &:hover {
       border-top: 1px solid !important;
       border-image-slice: 1 !important;
-      border-image: linear-gradient(180deg, #01d6fe 0%, #008bd9 31.25%, #10ffb7 100%);
+      border-image: linear-gradient(
+        180deg,
+        #01d6fe 0%,
+        #008bd9 31.25%,
+        #10ffb7 100%
+      );
       color: $White;
       background: rgba(1, 214, 254, 0.37) !important;
     }

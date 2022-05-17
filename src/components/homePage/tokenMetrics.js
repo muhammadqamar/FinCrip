@@ -20,7 +20,7 @@ const barsToken = [
 
 const tokenMetrics = () => {
   return (
-    <div className={styles.tokenMetrics}>
+    <div id="tokeno-mics" className={styles.tokenMetrics}>
       <h6 className={styles.heading}>Token Metrics</h6>
       <div className={styles.tokens}>
         {token.map((item) => (
@@ -36,7 +36,9 @@ const tokenMetrics = () => {
           <div key={item.key} className={styles.b_token}>
             <ProgressBar
               now={index < 2 ? 20 : index == 4 ? 15 : index == 5 ? 5 : 10}
-              label={`${index < 2 ? 20 : index == 4 ? 15 : index == 5 ? 5 : 10}%`}
+              label={`${
+                index < 2 ? 20 : index == 4 ? 15 : index == 5 ? 5 : 10
+              }%`}
             />
             <p className={styles.b_token_name}>{item.name}</p>
             <p className={styles.b_token_number}>{item.number}</p>

@@ -1,10 +1,10 @@
-import React from 'react';
-import { Image } from 'react-bootstrap';
-import style from './style/roadMap.module.scss';
+import React from "react";
+import { Image } from "react-bootstrap";
+import style from "./style/roadMap.module.scss";
 
 const RoadMap = () => {
   return (
-    <div className={style.roadMap_main}>
+    <div id="road-map" className={style.roadMap_main}>
       <div className={style.roadMap_section}>
         <img src="/croppedline.png" alt="" className={style.liner} />
         <img src="/Vector.png" alt="" className={style.liner2} />

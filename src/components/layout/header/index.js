@@ -23,12 +23,12 @@ const Index = () => {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link className="nav_Home" href="#action1">
+              <Nav.Link className="nav_Home" href="#main-section">
                 Home
               </Nav.Link>
-              <Nav.Link href="#action2">Key Features</Nav.Link>
-              <Nav.Link href="#action2">Tokenomics</Nav.Link>
-              <Nav.Link href="#action2">Road Map</Nav.Link>
+              <Nav.Link href="#key-feature">Key Features</Nav.Link>
+              <Nav.Link href="#tokeno-mics">Tokenomics</Nav.Link>
+              <Nav.Link href="#road-map">Road Map</Nav.Link>
               <Button className={styles.join_btn}>join presale</Button>
               <div className="flag_div">
                 <img

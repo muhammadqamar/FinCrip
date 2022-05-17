@@ -27,7 +27,7 @@ const card = [
 
 const KeyFeatures = () => {
   return (
-    <div className={style.feature_section}>
+    <div id="key-feature" className={style.feature_section}>
       <h5 className={style.feature_heading}>Key Features</h5>
 
       <div className={style.feature_cards}>
@@ -35,7 +35,9 @@ const KeyFeatures = () => {
           <div
             key={count}
             className={
-              index === 4 ? `${style.last_card} ${style.feature_card}` : style.feature_card
+              index === 4
+                ? `${style.last_card} ${style.feature_card}`
+                : style.feature_card
             }
           >
             <h6 className={style.card_heading}>{item.heading}</h6>

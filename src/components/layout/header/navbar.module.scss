@@ -14,8 +14,14 @@
   font-family: "Advent Pro";
   display: block;
 
-  .btn-primary:focus {
-    box-shadow: none;
+  &:focus {
+    color: #fff;
+    background-color: none !important;
+    border-color: none !important;
+    box-shadow: none !important;
+  }
+  &:hover {
+    background: #ff6600 !important;
   }
   @media (min-width: 875px) and (max-width: 1030px) {
     margin-right: 10px;
