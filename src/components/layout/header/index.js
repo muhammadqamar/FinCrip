@@ -1,7 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./navbar.module.scss";
-import { Button, Container, Nav, Navbar } from "react-bootstrap";
+import {
+  Button,
+  Container,
+  Nav,
+  Navbar,
+  Dropdown,
+  DropdownButton,
+} from "react-bootstrap";
 
 const Index = () => {
   return (
@@ -11,7 +18,11 @@ const Index = () => {
           <img className="nav_logo" alt="nav_logo" src="/icons/nav_logo.svg" />
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse className="nav_linksBtn" id="navbarScroll">
-            <Nav className="marg-nav" style={{ maxHeight: "100px" }} navbarScroll>
+            <Nav
+              className="marg-nav"
+              style={{ maxHeight: "100px" }}
+              navbarScroll
+            >
               <Nav.Link className="nav_Home" href="#action1">
                 Home
               </Nav.Link>
@@ -19,11 +30,27 @@ const Index = () => {
               <Nav.Link href="#action2">Tokenomics</Nav.Link>
               <Nav.Link href="#action2">Road Map</Nav.Link>
               <Button className={styles.join_btn}>join presale</Button>
-              <Image alt="nav_img" src="/icons/Space_Flag.svg" width={26} height={26} />
-              <Nav.Link className="lang_link" href="#action2">
-                langues
-              </Nav.Link>
-              <Image alt="nav_img" src="/icons/nav_arrow.svg" width={11} height={5} />
+              <div className="flag_div">
+                <img
+                  className="flag_Img"
+                  alt="nav_img"
+                  src="/icons/Space_Flag.svg"
+                />
+
+                <DropdownButton
+                  className={styles.dropdown_btn}
+                  id="dropdown-basic-button"
+                  title="langues"
+                >
+                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">
+                    Another action
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">
+                    Something else
+                  </Dropdown.Item>
+                </DropdownButton>
+              </div>
             </Nav>
           </Navbar.Collapse>
         </Container>

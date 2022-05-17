@@ -61,9 +61,15 @@ button {
 
   .container-fluid {
     max-width: 1140px;
-    // height: 89px !important;
     padding: 0 !important;
+    position: sticky;
 
+    .navbar-nav-scroll {
+      @media (max-width: 767px) {
+        overflow-y: inherit !important;
+        min-height: 366px;
+      }
+    }
     .nav_logo {
       width: 256px;
       height: 69px;
@@ -73,14 +79,17 @@ button {
         height: 43.12px;
       }
     }
-
     .nav_linksBtn {
       width: 100%;
     }
     .navbar-nav {
       align-items: center;
       margin-left: auto;
-
+      @media (max-width: 767px) {
+        background-color: #02131b;
+        align-items: flex-start;
+        padding: 27px;
+      }
       a.nav-link {
         max-width: 113px;
         white-space: pre;
@@ -93,8 +102,8 @@ button {
         line-height: 19px;
         text-transform: uppercase;
 
-        @media (min-width: 768px) and (max-width: 1030px) {
-          margin-right: 20px;
+        @media (min-width: 767px) and (max-width: 1030px) {
+          margin-right: 13px;
         }
 
         @media (max-width: 767px) {
@@ -109,6 +118,57 @@ button {
           margin: 15px 0;
         }
       }
+    }
+    .flag_div {
+      display: flex;
+
+      .flag_Img {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+  //Dropdown-Navbar
+  .dropdown {
+    .btn-primary {
+      background: none;
+      border: none;
+      font-family: "Rubik";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase;
+      padding-right: 0;
+    }
+    .dropdown-toggle {
+      color: $White !important;
+      background-color: #d10d0d00 !important;
+      border-color: #1fce4800 !important;
+
+      &:focus {
+        box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 0%) !important;
+      }
+
+      &::after {
+        display: inline-block;
+        margin: 0 0 -3px 10px;
+        vertical-align: 0.255em;
+        content: "";
+        width: 13px;
+        height: 8px;
+        border-top: 0 solid;
+        border-right: 0 solid transparent !important;
+        border-bottom: 0 !important;
+        border-left: 0 solid transparent !important;
+        background-image: url("/icons/nav_arrow.svg") !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+    .dropdown-menu {
+      right: 0;
+      left: inherit;
     }
   }
 }
