@@ -6,7 +6,7 @@ const Faq = () => {
   return (
     <div className={style.faq_main}>
       <h5 className={style.fag_heading}>FAQ</h5>
-      <Accordion defaultActiveKey="0">
+      <Accordion defaultActiveKey="1">
         <Accordion.Item eventKey="0">
           <Accordion.Header>
             On what blockchain network is FINCRIP token built?
